@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1% 0%;
+    background-color: darkorchid;
+
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 0% 0% 0% 15%;
+}
+
+.header_menu_links {
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 5% 15%;
+}
+
+h1 {
+    text-align: center;
+    text-align: left;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+.main__content {
+    width: 615px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main__content__title {
+    font-size: 36px;
+}
+
+.title_strong {
+    color: darkorchid;
+}
+
+p {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+}
+
+h2 {
+    text-align: center;
+    text-align: left;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    size: 24px;
+}
+
+.main__buttons__links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 388px;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-size: 24px;
+    border: 2px solid darkorchid;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.main__buttons__links:hover {
+    background-color: darkorchid;
+}
+
+.main__profilePicture {
+    width: 550px;
+    height: 550px;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
