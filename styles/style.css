@@ -17,9 +17,6 @@
 
 body {
     /* height: 100vh; */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     box-sizing: border-box;
@@ -33,9 +30,9 @@ header {
 
 .header_menu {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     font-family: var(--normal-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     padding: 0% 0% 0% 15%;
@@ -52,9 +49,15 @@ header {
 
 main {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
     padding: 5% 15%;
+}
+
+.main__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 h1 {
@@ -64,16 +67,8 @@ h1 {
 
 }
 
-.main__content {
-    width: 615px;
-    height: 482px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
 .main__content__title {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .main__content__tastes{
@@ -86,7 +81,7 @@ h1 {
 }
 
 p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--normal-font);
 }
 
@@ -100,7 +95,7 @@ li{
     font-family: var(--normal-font);
     width: 100%;
     padding: 15px 0px 15px 5px;
-    font-size: 24px;
+    font-size: 1.5rem;
     border-radius: 5px;
     margin: 10px 0;
     text-align: 5px;
@@ -127,10 +122,11 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 15px;
-    width: 388px;
+    width: 50%;
+    min-width: 100px;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     border: 2px solid var(--tertiary-color);
     text-align: center;
     font-family: var(--normal-font);
@@ -144,15 +140,33 @@ h2 {
 }
 
 .main__profilePicture {
-    width: 550px;
-    height: auto;
+    width: 50%;
+    height: 50%;
     border-radius: 15px;
 }
 
 footer {
-    margin: auto 0;
     display: flex;
     justify-content: center;
 }
 
+@media (max-width: 1200px){
 
+    .header_menu{
+        padding: 0% 5% 0% 5%;
+        justify-content: center;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .main__content{
+        width: 100%;
+    }
+
+    .main__profilePicture{
+        width: 100%;
+    }
+}
