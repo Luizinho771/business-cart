@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: purple ;
+    --hover-color: darkorchid;
+
+    --title-font:  'Krona One', sans-serif;
+    --normal-font: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,40 +17,41 @@
 
 body {
     /* height: 100vh; */
-    background-color: black;
-    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     box-sizing: border-box;
 }
 
 header {
     padding: 1% 0%;
-    background-color: darkorchid;
+    background-color: var(--tertiary-color);
 
 }
 
 .header_menu {
     display: flex;
     gap: 80px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--normal-font);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: white;
     padding: 0% 0% 0% 15%;
 }
 
 .header_menu_links {
     display: flex;
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--normal-font);
     font-weight: 600;
     text-decoration: none;
 }
 
-.main {
+main {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 40px;
     padding: 5% 15%;
@@ -49,7 +60,7 @@ header {
 h1 {
     text-align: center;
     text-align: left;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--title-font);
 
 }
 
@@ -65,13 +76,35 @@ h1 {
     font-size: 36px;
 }
 
+.main__content__tastes{
+    /* margin-bottom: 0px; */
+    margin: 0 0 -4rem 0;
+}
+
 .title_strong {
-    color: darkorchid;
+    color: var(--tertiary-color);
 }
 
 p {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--normal-font);
+}
+
+ul{
+    font-size: 24px;
+    font-family: var(--normal-font);
+    list-style-type: none;
+}
+
+li{
+    font-family: var(--normal-font);
+    width: 100%;
+    padding: 15px 0px 15px 5px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: 5px;
+    background-color: var(--tertiary-color);
 }
 
 .main__buttons {
@@ -85,7 +118,7 @@ p {
 h2 {
     text-align: center;
     text-align: left;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--title-font);
     font-weight: 400;
     size: 24px;
 }
@@ -98,25 +131,26 @@ h2 {
     padding: 21.5px 0;
     border-radius: 8px;
     font-size: 24px;
-    border: 2px solid darkorchid;
+    border: 2px solid var(--tertiary-color);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--normal-font);
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 
 .main__buttons__links:hover {
-    background-color: darkorchid;
+    background-color: var(--hover-color);
 }
 
 .main__profilePicture {
     width: 550px;
-    height: 550px;
+    height: auto;
     border-radius: 15px;
 }
 
 footer {
+    margin: auto 0;
     display: flex;
     justify-content: center;
 }
