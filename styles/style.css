@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-:root{
+:root {
     --primary-color: black;
     --secondary-color: white;
-    --tertiary-color: purple ;
+    --tertiary-color: purple;
     --hover-color: darkorchid;
 
-    --title-font:  'Krona One', sans-serif;
+    --title-font: 'Krona One', sans-serif;
     --normal-font: 'Montserrat', sans-serif;
 }
 
@@ -71,7 +71,7 @@ h1 {
     font-size: 2.25rem;
 }
 
-.main__content__tastes{
+.main__content__tastes {
     /* margin-bottom: 0px; */
     margin: 0 0 -4rem 0;
 }
@@ -85,13 +85,13 @@ p {
     font-family: var(--normal-font);
 }
 
-ul{
+ul {
     font-size: 24px;
     font-family: var(--normal-font);
     list-style-type: none;
 }
 
-li{
+li {
     font-family: var(--normal-font);
     width: 100%;
     padding: 15px 0px 15px 5px;
@@ -123,7 +123,6 @@ h2 {
     justify-content: center;
     gap: 15px;
     width: 50%;
-    min-width: 100px;
     padding: 21.5px 0;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -150,23 +149,29 @@ footer {
     justify-content: center;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 
-    .header_menu{
+    .header_menu {
         padding: 0% 5% 0% 5%;
         justify-content: center;
+        gap: 5%;
+
     }
 
-    main{
+    main {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .main__content{
+    .main__content {
         width: 100%;
     }
 
-    .main__profilePicture{
+    .main__profilePicture {
         width: 100%;
+    }
+
+    .main__buttons__links {
+        min-width: 200px;
     }
 }
